@@ -25,3 +25,19 @@ cat ~/.aws/credentials
 ```
 # aws provider version
 - https://registry.terraform.io/providers/hashicorp/aws/latest
+
+# files
+
+- uniq-variable.tf.bk
+```sh
+# コピーする
+## プロファイル名やssh接続元IP指定する、など
+cp uniq-variables.tf.bk uniq-variables.tf
+```
+
+# ssh-key作成する場合
+```sh
+cd ~/.ssh/
+ssh-keygen -t rsa -b 4096 -f dev-key
+ls -la ~/.ssh/ | grep --color=auto dev-key 
+```
