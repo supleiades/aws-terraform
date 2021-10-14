@@ -9,6 +9,6 @@ variable "aws_region" {
   default = "ap-northeast-1"
 }
 
-variable "aws_profile" {
-  default = "{任意のプロファイル名}"
+variable "key_pair_filepath" {
+    default = "~/.ssh/dev-key.pub"
 }
